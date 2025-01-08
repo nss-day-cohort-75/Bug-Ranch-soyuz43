@@ -76,11 +76,13 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > An array of objects that contains details about an individual drover.
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > Loop, iterating of the individual objects within the drovers array.
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > [Video](https://www.loom.com/share/31df258aadec4ff984a212eba7c18e88)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +90,13 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This loop populates the `journey` array with a series of `forest` strings, each representing a forest the travelers encounter on their journey. The total number of `forest` strings added depends directly on the value of `areas.forests`, which defines the number of iterations the loop runs for.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database is an object that encapsulates the `cattleTypes` and the `drovers` property. Each of which are an array of objects.
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > `herdSize` is  used to calculate the number of drovers needed. (1/ 10) This param directly determines how many drovers are selected from `database.drovers`. In short, the `herdSize` is a parameter that is used to dynamically adjust the number of drovers hired based on the herd.
 
 ## When You Are Done
 
